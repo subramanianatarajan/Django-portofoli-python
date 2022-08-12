@@ -1,0 +1,61 @@
+Last login: Fri Aug 12 11:36:29 on ttys000
+nsubramanian-mac@subramaniansAir ~ % cd desktop
+nsubramanian-mac@subramaniansAir desktop % ls
+Project 		portfolio-project
+nsubramanian-mac@subramaniansAir desktop % cd portfolio-project
+nsubramanian-mac@subramaniansAir portfolio-project % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/nsubramanian-mac/Desktop/portfolio-project/.git/
+nsubramanian-mac@subramaniansAir portfolio-project % git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	db.sqlite3
+	images/
+	jobs/
+	manage.py
+	projects/
+	protofolio/
+	static/
+
+nothing added to commit but untracked files present (use "git add" to track)
+nsubramanian-mac@subramaniansAir portfolio-project % vim gitignore
+.pyc
+db.sqlite3
+
+~                                                                                                                
+~                                                                                                                
+~                                                                                                                
+~                                                                                                                
+~                                                                                                                
+~                                                                                                                
+~                                                                                                                
+~                                                                                                                
+~                                                                                                                
+~                                                                                                                
+~                                                                                                                
+~                                                                                                                
+~                                                                                                                
+~                                                                                                                
+~                                                                                                                
+~                                                                                                                
+~                                                                                                                
+~                                                                                                                
+~                                                                                                                
+~                                                                                                                
+~                                                                                                                
+~                                                                                                                
+-- INSERT --

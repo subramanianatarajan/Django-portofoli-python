@@ -1,0 +1,92 @@
+
+<!doctype html>
+<html lang="en">
+    {% load static %} 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Subramanian Natarajan</title>
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  </head>
+
+  <body>
+
+    
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Subramanian Natarajan</h1>
+          <p class="lead text-muted">I'm Subramanian Natarajan from India , currently attending Masters in Computer science program in IU International University of applied science  Berlin from oct 2021 to Oct 2023.Previous I am having experience as a Computer Engineer, Dubai,UAE. 
+
+            I have gained vast knowledge in IT Support, Software implementation, Data Analysis and Customer Services .I have handled various responsibilities in my past solution developer position and quickly established talents in prioritizing tasks, meeting deadlines and finding solutions to eliminate obstacles.
+            
+            More interested working on Full-Stack Development and Cloud technology , I have been completed cloud computing course having more knowledge of AWS services course , in programming currently doing some personal project on Python, JavaScript, PostgreSQL.</p>
+          <p>
+            <a href="mailto:subramanian.natarajan@yahoo.com" class="btn btn-primary my-2">Email me</a>
+            
+          </p>
+          <img src="{% static 'profile.jpeg' %}" height = 300></img>
+        </div>
+      </section>
+      <h1>MY PREVIOUS JOBS</h1>
+      <div class="album py-5 bg-light">
+        <div class="container">
+        <div class="row">
+          
+
+                {% for job in jobs.all %}
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="{{job.image.url }}">
+                <div class="card-body">
+                  <p class="card-text">{{job.summary }} </p>
+                  </div>
+                  </div>
+                  </div>
+                  {% endfor %}
+                </div>
+            </div>
+            </div>
+           
+            <h1>MY CURRRENT PROJECT</h1>
+            <style>
+                .myDiv {
+                  border: 5px ;
+                  background-color: lightblue;    
+                  text-align: center;
+                  width: auto;
+                }
+                </style>
+                <body>
+
+<Div class="mydiv">
+             
+                <p>Building a personal portolio with Django</p>
+                <p1> In this project implement using basics of Django for web development by 
+                    building your own website—a personal portfolio—from the ground up.</p1>
+
+                  <p2>This project include create a database, design the layout for your website, 
+                    and add and update URL paths. Learn how to connect your Django project to Postgres, 
+                    add static files and URLs, and more.</p2>
+                
+                    </Div>
+                </body>
+
+    </main>
+
+    
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'js/bootstrap.js' %}" ></script>
+    <script src="{% static 'jquery-3.3.1.min.js' %}" ></script>
+  </body>
+</html>
